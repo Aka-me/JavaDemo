@@ -5,6 +5,9 @@ public class Sort {
 
     }
 
+    public static void sort(int[] sequence) {
+    }
+
     public static void swap(int[] seq,int a,int b){
         int temp;
         temp=seq[a];

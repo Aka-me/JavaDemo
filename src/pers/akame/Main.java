@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         int[] sequence={1,5,78,2,4,5,99,12,4,0,58,3245,24,15,0};
 
-        BubbleSort.bubbleSort(sequence);
+        SelectionSort.sort(sequence);
 
         for (int element:
              sequence) {
