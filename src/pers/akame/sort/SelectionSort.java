@@ -13,12 +13,12 @@ public class SelectionSort extends Sort {
 
     public static void sort(int[] sequence){
         for (int i = 0; i < sequence.length-1; i++) {
-            int minIdex=i;
+            int minIndex=i;
             for (int j = i; j < sequence.length; j++) {
-                if(sequence[j]<sequence[minIdex])
-                    minIdex=j;
+                if(sequence[j]<sequence[minIndex])
+                    minIndex=j;
             }
-            swap(sequence,minIdex,i);
+            swap(sequence,minIndex,i);
         }
     }
 }
