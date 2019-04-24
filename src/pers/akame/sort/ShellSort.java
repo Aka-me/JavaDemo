@@ -1,5 +1,11 @@
 package pers.akame.sort;
 
+/**希尔排序使用的是变化的归并算法,对于每一次归并内部使用插入排序
+ * 通过分解问题规模来降低算法的时间复杂度
+ * 希尔排序的最优最差和平均复杂度都是O(nlog_2 n)
+ * 希尔推荐的gap是每次除以2,实际应用中发现这种选择也确实有效,但这种选择并不是绝对的
+ * 而如何选择最优的gap值则是一个比较难证明的数学问题,因此一般使用2*/
+
 public class ShellSort extends Sort {
     public static void sort(int[] sequence){
         int len=sequence.length;
